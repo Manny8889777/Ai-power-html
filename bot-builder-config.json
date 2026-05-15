@@ -1,0 +1,88 @@
+{
+  "projectName": "AI Bot Builder",
+  "version": "1.0.0",
+  "hackathon": "AI Hackathon 2026",
+  "description": "Multi-bot platform with Sales, Support, Care, and HR bots",
+  "bots": [
+    {
+      "id": "sales",
+      "name": "Sales Bot",
+      "icon": "🛍️",
+      "description": "Intelligent sales assistant for product recommendations and deals",
+      "maxTokens": 500,
+      "temperature": 0.7,
+      "features": [
+        "Product recommendations",
+        "Price negotiations",
+        "Discount strategies",
+        "Order processing"
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Support Bot",
+      "icon": "🎧",
+      "description": "Customer support specialist for issue resolution",
+      "maxTokens": 500,
+      "temperature": 0.6,
+      "features": [
+        "Issue resolution",
+        "Refund handling",
+        "Shipping tracking",
+        "Technical support"
+      ]
+    },
+    {
+      "id": "care",
+      "name": "Care Bot",
+      "icon": "💬",
+      "description": "Customer care specialist for loyalty building",
+      "maxTokens": 500,
+      "temperature": 0.8,
+      "features": [
+        "Relationship building",
+        "Loyalty programs",
+        "Personalized offers",
+        "Customer retention"
+      ]
+    },
+    {
+      "id": "hr",
+      "name": "HR Bot",
+      "icon": "👔",
+      "description": "Human resources assistant for recruitment and policies",
+      "maxTokens": 500,
+      "temperature": 0.6,
+      "features": [
+        "Job applications",
+        "Policy guidance",
+        "Benefits information",
+        "Interview scheduling"
+      ]
+    }
+  ],
+  "api": {
+    "provider": "Anthropic",
+    "model": "claude-sonnet-4-20250514",
+    "endpoint": "https://api.anthropic.com/v1/messages",
+    "timeout": 30000
+  },
+  "analytics": {
+    "trackMessages": true,
+    "trackLeads": true,
+    "trackSessionTime": true,
+    "exportFormats": ["txt", "json"]
+  },
+  "ui": {
+    "theme": "dark",
+    "chatHeight": "680px",
+    "maxMessageLength": 5000,
+    "animationSpeed": "300ms"
+  },
+  "performance": {
+    "minFileSize": "< 30KB",
+    "loadTime": "< 500ms",
+    "apiResponseTime": "< 1s",
+    "cacheEnabled": true
+  }
+}
